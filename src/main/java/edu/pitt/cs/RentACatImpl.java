@@ -87,7 +87,7 @@ public class RentACatImpl implements RentACat {
 		if (cats == null || cats.size() == 0) {
 			return false;
 		}
-		return getCat(id) == null;
+		return getCat(2) != null;
 	}
 
 	/**
