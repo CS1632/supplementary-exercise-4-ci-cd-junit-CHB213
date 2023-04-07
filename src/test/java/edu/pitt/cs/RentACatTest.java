@@ -194,6 +194,8 @@ public class RentACatTest {
 	public void testCatExistsTrueNumCats3() {
 		// TODO
 		Mockito.when(c2.getId()).thenReturn(2);
+		Mockito.when(c2.getName()).thenReturn("Old Deuteronomy");
+		Mockito.when(c2.getRented()).thenReturn(false);
 		r.addCat(c1);
 		r.addCat(c2);
 		r.addCat(c3);
